@@ -49,7 +49,7 @@
   flex-direction: row;
   /* justify-content: space-around; */
   /* border: 1px solid yellow; */
-  margin-right:60px ;
+  margin-right: 60px;
 }
 #div-product-details-Con {
   width: 30%;
@@ -118,35 +118,132 @@
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
 }
-.alignText{
+.alignText {
   margin-left: 30px;
 }
 .div-product-details-content2 {
   font-family: "Montserrat", sans-serif;
 }
-.div-product-details-content2 > fieldset
-{
+.div-product-details-content2 > fieldset {
   margin-top: 15px;
   width: 260px;
   height: 160px;
 }
-.div-product-details-content2 > fieldset > legend
-{
+.div-product-details-content2 > fieldset > legend {
   padding: 8px;
   color: #ffff;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
-.smallFont{
+.smallFont {
   color: #ffff;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   padding: 10px;
 }
-.spanCapital{
+.spanCapital {
   font-weight: bold;
 }
-.belowRatingSearchBar{
+.belowRatingSearchBar {
   border: 1px solid yellow;
+}
+
+.div-product-subDetails {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.div-product-subDetails1 {
+  margin-top: 20px;
+  width: 20%;
+}
+.div-product-subDetails2 {
+  /* border: 1px solid yellow; */
+  width: 60%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  height: 400px;
+  overflow-y: auto; 
+  overflow-x: hidden;
+}
+.div-product-subDetails3 {
+  margin-top: 20px;
+  width: 20%;
+}
+.div-product-subDetails1 > ul > li {
+  font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+  text-align: right;
+  color: #4e4c4c;
+  letter-spacing: 0px;
+  padding: 5px;
+  margin-right: 20px;
+}
+.div-product-subDetails1 > ul > li:hover {
+  color: orange;
+  font-weight: bold;
+}
+.div-product-subDetails3 > p {
+  font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+  color: #8a8787;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#div-product-subDetails3-para {
+  font-family: "Montserrat", sans-serif;
+  color: #8a8787;
+  font-size: 15px;
+}
+#div-product-subDetails3 img {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#megaSaver {
+  font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#megaSaver1 {
+  font-family: "Montserrat", sans-serif;
+  color: #8a8787;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+#div-product-subDetails2-table {
+  width: 100%;
+  
+}
+#td1 {
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-bottom: 21px;
+  color: #8a8787;
+}
+#td1 > p {
+  margin-bottom: 8px;
+}
+#td1 > img {
+  width: 20px;
+}
+#td2 {
+  width: 20%;
+  font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+}
+#td2 > img {
+  width: 120px;
+  margin: 10px;
+}
+
+
+
+/* Mobile View */
+@media only screen and (max-width: 900px) {
+
 }
