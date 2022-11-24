@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  height: 80px;
+  background-color: #f3eaea;
+  -webkit-box-shadow: 0px 8px 12px 5px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 8px 12px 5px rgba(0, 0, 0, 0.24);
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid black; */
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #3d4152;
+  margin-left: 3%;
+}
+
+.site-logo {
+  /* border: 2px solid orangered; */
+  height: 80px;
+  width: 120px;
+}
+.site-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.site-logo img:hover {
+  -webkit-box-shadow: 2px 12px 10px rgb(210, 119, 44);
+  -moz-box-shadow: 2px 12px 10px rgb(204, 120, 52);
+  box-shadow: 2px 12px 10px rgb(223, 152, 94);
+  opacity: 1;
+  cursor: pointer;
+}
+.logo-section p {
+  width: 50%;
+}
+.logo-section p:hover {
+  color: #fc8019;
+}
+
+.nav-items-section {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  /* border: 2px solid green; */
+  color: #3d4152;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-item {
+  /* font-family: ProximaNova,arial,Helvetica Neue,sans-serif; */
+  /* font-family: 'Play', sans-serif; */
+  font-family: "Tajawal", sans-serif;
+  margin-left: 12%;
+}
+
+.nav-item:hover {
+  color: rgb(252, 128, 25);
+  cursor: pointer;
+}
+
+/* .hero-image-section p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+  color: rgb(255, 250, 250);
+
+} */
+
+.container {
+  position: relative;
+  background: #aad5f6;
+}
+.slide-1 {
+  background: url("../images/indian.jpg");
+}
+.slide-2 {
+  background: url("../images/indian2.jpg");
+}
+.slide-3 {
+  background: url("../images/image3.avif");
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.caption {
+  background: rgba(0, 0, 0, 0.03);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 40px 0px;
+}
+.caption h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  padding: 18px;
+}
+.caption p {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+  color: rgb(255, 250, 250);
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transform: background 500ms;
+}
+.arrow img {
+  width: 50px;
+}
+
+.span-title {
+  color: #e7272d;
+}
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.l {
+  left: 0;
+}
+.r {
+  right: 0;
+}
+
+.signature-dishes-section{
+  margin-top: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signature-dishes-heading{
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+
+.left-border{
+  border-color: #e7272d;
+  border-top: 5px solid red;
+}
+
+.menu-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+  margin-top: 5%;
+  /* border: 2px solid green; */
+
+}
+.hr-style{
+  width: 80px;
+  height: 1px;
+  border: 1px solid #e7272d;
+}
+
+.special-menu{
+  font-size: 18px;
+  color: #e7272d;
+  font-family: Roboto Slab, sans-serif;
+  letter-spacing: 4px;
+}
