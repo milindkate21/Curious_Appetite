@@ -163,8 +163,8 @@
   right: 0;
 }
 
-.signature-dishes-section{
-  margin-top: 10%;
+.signature-dishes-section {
+  margin-top: 8%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -172,22 +172,22 @@
   align-items: center;
 }
 
-.signature-dishes-heading{
+.signature-dishes-heading {
   width: 90%;
   margin: 0px auto;
   text-align: center;
-  font-weight: bold;
-  font-size: 60px;
+  font-weight: 500;
+  font-size: 50px;
   font-family: "Oswald", sans-serif;
   color: black;
 }
 
-.left-border{
+.left-border {
   border-color: #e7272d;
   border-top: 5px solid red;
 }
 
-.menu-title{
+.menu-title {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -195,17 +195,250 @@
   width: 400px;
   margin-top: 5%;
   /* border: 2px solid green; */
-
 }
-.hr-style{
+.hr-style {
   width: 80px;
   height: 1px;
   border: 1px solid #e7272d;
 }
 
-.special-menu{
+.special-menu {
   font-size: 18px;
   color: #e7272d;
   font-family: Roboto Slab, sans-serif;
   letter-spacing: 4px;
+}
+
+.menu-items-section {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
+}
+
+.menu-items-section1,
+.menu-items-section2 {
+  width: 32%;
+  /* border: 2px solid  green; */
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-item-title {
+  font-family: Oswald, sans-serif;
+  color: #646464;
+  /* font-weight: 600; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40px;
+  width: 180px;
+  /* border: 2px solid red; */
+  line-height: 26px;
+  font-size: 20px;
+}
+
+.parallax {
+  position: relative;
+  margin-top: 5%;
+  /* The image used */
+  background-image: url("../images/parallax-image2.jpg");
+
+  /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-parallax {
+  position: absolute;
+  font-family: Oswald, sans-serif;
+  top: 40%;
+  left: 5%;
+  text-align: left;
+  font-size: 30px;
+  width: 400px;
+  /* border: 2px solid green; */
+  color: white;
+}
+
+.weekends-prallax-text {
+  color: #e7272d;
+}
+
+.restaurants-section {
+  margin-top: 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.restaurants {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.restaurant-item {
+  width: 320px;
+  height: 320px;
+  margin-left: 30px;
+  margin-top: 30px;
+  /* border: 2px solid purple; */
+}
+
+.restaurant-item:hover {
+  border: 2px solid rgb(243, 178, 125);
+  cursor: pointer;
+}
+
+.rest-image-section {
+  width: 100%;
+  height: 180px;
+}
+.rest-image-section img {
+  width: 100%;
+  height: 100%;
+}
+.rest-details {
+  /* padding-left: 5%; */
+  padding-top: 5%;
+}
+
+.rest-title p:first-child {
+  font-weight: bold;
+  color: #282c3f;
+  font-size: 18px;
+  font-family: "Philosopher", sans-serif;
+}
+
+.sub-title {
+  color: #4e4f53;
+  font-size: 15px;
+  margin-top: 4px;
+  font-family: "Philosopher", sans-serif;
+}
+
+.rest-minutes-details {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #393a3b;
+  font-size: 14px;
+  font-family: "Philosopher", sans-serif;
+}
+
+.rating {
+  background-color: #db7c38;
+  color: #fff;
+  width: 50px;
+  padding: 2px;
+  text-align: center;
+  height: 25px;
+
+  border-radius: 2px;
+  font-family: "Philosopher", sans-serif;
+}
+
+.valuable-clients-heading {
+  width: 90%;
+  margin-top: 10%;
+  /* margin: 0px auto; */
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+
+.valuable-clients-section {
+  background-color: #e7272d;
+}
+
+.valuable-clients {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* border: 2px solid black; */
+}
+
+.client-title {
+  font-size: 18px;
+  color: #ebe2e2;
+  font-family: Roboto Slab, sans-serif;
+  letter-spacing: 4px;
+}
+
+.hr-style-client {
+  width: 80px;
+  height: 1px;
+  border: 1px solid black;
+}
+
+.client-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 600px;
+  margin-top: 2%;
+  /* border: 2px solid green; */
+}
+
+.company-image-client {
+  width: 38%;
+  height: 600px;
+  /* border: 2px solid yellow; */
+}
+
+.company-img {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-section {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+  margin-left: -10%;
+}
+
+.profile-item1 {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid rgb(102, 102, 17); */
+}
+
+.profile-detail {
+  margin-left: 5%;
+  color: white;
+}
+.profile-title{
+  padding-top: 5px;
+  font-family: "Oswald", sans-serif;
+}
+
+.profile-review{
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  line-height: 24px;
 }
