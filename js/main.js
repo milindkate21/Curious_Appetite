@@ -1,16 +1,54 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const loginForm = document.querySelector("#login");
-    const createAccountForm = document.querySelector("#createAccount");
+let slide = document.querySelectorAll('.slide');
+var current = 0;
 
-    document.querySelector("#linkCreateAccount").addEventListener("click", e => {
-        e.preventDefault();
-        loginForm.classList.add("form--hidden");
-        createAccountForm.classList.remove("form--hidden");
-    });
+function cls(){
+    for(let i = 0; i < slide.length; i++){
+          slide[i].style.display = 'none';
+    }
+}
 
-    document.querySelector("#linkLogin").addEventListener("click", e => {
-        e.preventDefault();
-        loginForm.classList.remove("form--hidden");
-        createAccountForm.classList.add("form--hidden");
-    });
-});
+function next(){
+    cls();
+    if(current === slide.length-1) current = -1;
+    current++;
+
+    slide[current].style.display = 'block';
+    slide[current].style.opacity = 0.4;
+
+    var x = 0.4;
+    var intX = setInterval(function(){
+        x+=0.1;
+        slide[current].style.opacity = x;
+        if(x >= 1) {
+            clearInterval(intX);
+            x = 0.4;
+        }
+    }, 100);
+
+}
+
+function prev(){
+    cls();
+    if(current === 0) current = slide.length;
+    current--;
+
+    slide[current].style.display = 'block';
+    slide[current].style.opacity = 0.4;
+
+    var x = 0.4;
+    var intX = setInterval(function(){
+        x+=0.1;
+        slide[current].style.opacity = x;
+        if(x >= 1) {
+            clearInterval(intX);
+            x = 0.4;
+        }
+    }, 100);
+
+}
+
+function start(){
+    cls();
+    slide[current].style.display = 'block';
+}
+start();

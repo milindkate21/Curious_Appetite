@@ -10,7 +10,7 @@
   padding: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  height: 8px;
+  height: 35px;
 }
 ul {
   list-style-type: none;
@@ -31,7 +31,7 @@ ul {
   font-size: 15px;
 }
 .div-product-details {
-  background-color: #142f42;
+  background-color: #171a29;
   height: 750px;
   display: flex;
   flex-direction: column;
@@ -228,7 +228,7 @@ ul {
     padding-left: 100px;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
-    height: 8px;
+    height: 35px;
   }
 
   .div-product-homeLink > ul > li > a {
@@ -250,7 +250,7 @@ ul {
   }
 
   .div-product-details {
-    background-color: #142f42;
+    background-color: #171a29;
     height: 300px;
     display: flex;
     flex-direction: row;
