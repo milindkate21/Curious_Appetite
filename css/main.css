@@ -1,0 +1,1311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MOBILE SCREEN - BASE CSS */
+
+/* ============== START - NAVIGATION BAR ================ */
+.navbar-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  height: 100px;
+  background-color: #f3eaea;
+  -webkit-box-shadow: 0px 8px 12px 5px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 8px 12px 5px rgba(0, 0, 0, 0.24);
+}
+.logo-section {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid black; */
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #3d4152;
+  margin-left: 3%;
+}
+.site-logo {
+  /* border: 2px solid orangered; */
+  height: 80px;
+  width: 120px;
+}
+.site-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.site-logo img:hover {
+  -webkit-box-shadow: 2px 12px 10px rgb(210, 119, 44);
+  -moz-box-shadow: 2px 12px 10px rgb(204, 120, 52);
+  box-shadow: 2px 12px 10px rgb(223, 152, 94);
+  opacity: 1;
+  cursor: pointer;
+}
+.open-nav {
+  display: block;
+  cursor: pointer;
+  margin-right: 8%;
+  font-size: 30px;
+}
+.nav-items-section {
+  display: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #3d4152;
+}
+
+.nav-item a:hover {
+  color: rgb(252, 128, 25);
+  cursor: pointer;
+}
+
+/* ========== END OF NAVIGatION BAR ============== */
+
+/* ============== START - SLIDER  ================ */
+.container {
+  position: relative;
+  background: #aad5f6;
+}
+.slide-1 {
+  background: url("../images/indian.jpg");
+}
+.slide-2 {
+  background: url("../images/indian2.jpg");
+}
+.slide-3 {
+  background: url("../images/image3.avif");
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.caption {
+  background: rgba(0, 0, 0, 0.03);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 40px 0px;
+}
+.caption h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  padding: 18px;
+}
+.caption p {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  color: rgb(255, 250, 250);
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transform: background 500ms;
+}
+.arrow img {
+  width: 50px;
+}
+
+.span-title {
+  color: #e7272d;
+}
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.l {
+  left: 0;
+}
+.r {
+  right: 0;
+}
+
+/* ============ END - SLIDER =============== */
+/* ============ START - SIGNATURE DISHES - HEADING ========== */
+
+.signature-dishes-section {
+  margin-top: 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signature-dishes-heading {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 35px;
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+.special-menu {
+  font-size: 16px;
+  color: #e7272d;
+  font-family: Roboto Slab, sans-serif;
+  letter-spacing: 4px;
+}
+.hr-style {
+  width: 60px;
+  height: 1px;
+  border: 1px solid #e7272d;
+}
+
+.menu-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin-top: 5%;
+  /* border: 2px solid green; */
+}
+
+/* ============ END - SIGNATURE DISHES - HEADING*/
+/* ============ MENU ITEMS _ START ================ */
+.menu-items-section {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
+}
+.menu-items-section1,
+.menu-items-section2 {
+  width: 94%;
+  margin-right: 3%;
+  margin-left: 3%;
+  /* border: 2px solid green; */
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-item-title {
+  font-family: Oswald, sans-serif;
+  color: #646464;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40px;
+  width: 160px;
+  /* border: 2px solid red; */
+  line-height: 26px;
+  font-size: 20px;
+}
+
+.mobile-style {
+  margin-top: 8%;
+}
+
+/*  ========== MENU ITEMS - END =========== */
+
+/* ============== PARALLAX _ START ============== */
+.parallax {
+  position: relative;
+  margin-top: 5%;
+  /* The image used */
+  background-image: url("../images/parallax-image2.jpg");
+
+  /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-parallax {
+  position: absolute;
+  font-family: Oswald, sans-serif;
+  top: 60%;
+  left: 5%;
+  text-align: left;
+  font-size: 30px;
+  width: 400px;
+  /* border: 2px solid green; */
+  color: white;
+}
+
+.weekends-prallax-text {
+  color: #e7272d;
+}
+/* ============ PARALLAX - END ================ */
+
+/* ============== RESTAURANTS - SECTION  - START ============== */
+
+.restaurants-section {
+  margin-top: 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.restaurant-item {
+  width: 86%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 5%;
+  height: 400px;
+  /* border: 2px solid purple; */
+}
+
+.restaurant-item:hover {
+  border: 2px solid rgb(243, 178, 125);
+  cursor: pointer;
+}
+
+.rest-image-section {
+  width: 100%;
+  height: 280px;
+}
+.rest-image-section img {
+  width: 100%;
+  height: 100%;
+}
+.rest-details {
+  padding-top: 5%;
+}
+
+.rest-title p:first-child {
+  font-weight: bold;
+  color: #282c3f;
+  font-size: 18px;
+  font-family: "Philosopher", sans-serif;
+}
+
+.sub-title {
+  color: #4e4f53;
+  font-size: 15px;
+  margin-top: 4px;
+  font-family: "Philosopher", sans-serif;
+}
+
+.rest-minutes-details {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #393a3b;
+  font-size: 14px;
+  font-family: "Philosopher", sans-serif;
+}
+
+.rating {
+  background-color: #db7c38;
+  color: #fff;
+  width: 50px;
+  padding: 2px;
+  text-align: center;
+  height: 25px;
+
+  border-radius: 2px;
+  font-family: "Philosopher", sans-serif;
+}
+/* =============== RESTAURANTS - SECTION  - END ============== */
+
+/* =============== START - VALUABLE CLIENT SECTION ============= */
+.valuable-clients-heading {
+  width: 90%;
+  margin-top: 10%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+  color: black;
+}
+.client-title {
+  font-size: 14px;
+  color: #ebe2e2;
+  font-family: Roboto Slab, sans-serif;
+  letter-spacing: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin-top: 2%;
+  /* border: 2px solid green; */
+}
+.hr-style-client {
+  width: 40px;
+  height: 1px;
+  border: 1px solid black;
+}
+
+.valuable-clients {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 2px solid black; */
+}
+
+.company-image-client {
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 460px;
+  /* border: 2px solid yellow; */
+}
+.company-img {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-section {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+}
+.profile-item1 {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid rgb(102, 102, 17); */
+}
+.valuable-clients-section {
+  background-color: #bb5d19;
+  padding-bottom: 10%;
+}
+
+.profile-detail {
+  margin-left: 5%;
+  color: white;
+}
+.profile-title {
+  padding-top: 5px;
+  font-family: "Oswald", sans-serif;
+}
+
+.profile-review {
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+/* =============== END - VALUABLE CLIENT SECTION ============= */
+
+/*  =============== FOOTER - START ============= */
+.footer-section {
+  background-color: #171a29;
+  color: white;
+  height: 750px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: 14px;
+  flex-wrap: wrap;
+  font-family: "Helvetica", Sans-serif;
+}
+
+.item-width {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  /* border: 2px solid yellow; */
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+.footer-item-detail {
+  height: 240px;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 24px;
+}
+.footer-item-detail p {
+  cursor: pointer;
+}
+
+.timing-detail {
+  height: 60px;
+  border: 2px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-item-heading p {
+  /* font-weight: 600; */
+  font-size: 18px;
+}
+.hr-style-footer-item {
+  margin-top: 5%;
+  width: 40px;
+  height: 1px;
+  border: 1px solid #d38116;
+}
+
+/*  =============== FOOTER - END ============= */
+
+/* ================ COPYRIGHT - START ============== */
+.copyright-text {
+  font-family: "Helvetica", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bcbcbc;
+  background-color: #2c2929;
+}
+
+/* ================ COPYRIGHT - END ============== */
+
+/* ======================= CONTACT US ==================== */
+.contact-us-hero-image-section {
+  height: 250px;
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.contact-us-hero-image-section img {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid green; */
+}
+.contact-us-hero-image-section p {
+  position: absolute;
+  top: 25%;
+  width: 250px;
+  text-align: right;
+  right: 4%;
+  line-height: 30px;
+  height: 130px;
+  font-weight: bold;
+  /* border: 2px solid yellow; */
+  font-family: "Philosopher", sans-serif;
+  /* font-family: "Tajawal", sans-serif; */
+  color: #f3eaea;
+  font-size: 35px;
+}
+
+.love-style {
+  color: #e7272d;
+}
+
+.contact-us-main-div {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 1300px;
+  /* border: 5px solid purple; */
+  margin-bottom: 10%;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 600px;
+}
+
+.inputs-style {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 40px;
+  border-radius: 5px;
+  border: 0.1rem solid rgb(207, 207, 207);
+  text-indent: 10px;
+  font-size: 18px;
+  color: rgb(158, 153, 153);
+}
+
+.inputs-style::placeholder {
+  color: rgb(158, 153, 153);
+}
+
+.inputs-style:focus {
+  border: 0.1rem solid rgb(122, 116, 116);
+}
+.textareaInput {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  border: 0.1rem solid rgb(207, 207, 207);
+  text-indent: 10px;
+  font-size: 18px;
+  color: rgb(158, 153, 153);
+}
+.submit-feedback {
+  height: 50px;
+  background: border-box rgb(239, 79, 95);
+  border: 1px solid rgb(239, 79, 95);
+  color: rgb(255, 255, 255);
+  width: 200px;
+  font-family: "Tajawal", sans-serif;
+  border-radius: 8px;
+  font-size: 20px;
+  margin-left: -48%;
+}
+
+.submit-feedback:hover {
+  cursor: pointer;
+  background-color: rgb(224, 53, 70);
+}
+
+.contact-us-report {
+  /* border: 2px solid green; */
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.report-item1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Tajawal", sans-serif;
+  height: 170px;
+  /* border: 2px solid yellowgreen; */
+  border-radius: 0.8rem;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(28 28 28 / 8%) 0px 0.4rem 0.8rem;
+}
+
+.report-heading {
+  font-size: 1.8rem;
+  color: rgb(28, 28, 28);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.report-para {
+  font-size: 1.2rem;
+  color: rgb(79, 79, 79);
+}
+.report-link {
+  text-decoration: none;
+  color: rgb(239, 79, 95);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 962px) {
+  .navbar-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    height: 80px;
+    background-color: #f3eaea;
+    -webkit-box-shadow: 0px 8px 12px 5px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 8px 12px 5px rgba(0, 0, 0, 0.24);
+  }
+  .nav-items-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 700px;
+
+    /* border: 2px solid green; */
+    color: #3d4152;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .nav-item a {
+    text-decoration: none;
+    color: #3d4152;
+  }
+
+  .nav-item a:hover {
+    color: rgb(252, 128, 25);
+    cursor: pointer;
+  }
+  .open-nav {
+    display: none;
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* font-family: 'Great Vibes', cursive; */
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #3d4152;
+    margin-left: 3%;
+  }
+
+  .site-logo {
+    /* border: 2px solid orangered; */
+    height: 80px;
+    width: 120px;
+  }
+  .site-logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .site-logo img:hover {
+    -webkit-box-shadow: 2px 12px 10px rgb(210, 119, 44);
+    -moz-box-shadow: 2px 12px 10px rgb(204, 120, 52);
+    box-shadow: 2px 12px 10px rgb(223, 152, 94);
+    opacity: 1;
+    cursor: pointer;
+  }
+  .logo-section p {
+    width: 50%;
+  }
+  .logo-section p:hover {
+    color: #fc8019;
+  }
+
+  .nav-item {
+    /* font-family: ProximaNova,arial,Helvetica Neue,sans-serif; */
+    /* font-family: 'Play', sans-serif; */
+    font-family: "Tajawal", sans-serif;
+    margin-left: 12%;
+  }
+
+  /* .hero-image-section p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    color: rgb(255, 250, 250);
+  
+  } */
+
+  .container {
+    position: relative;
+    background: #aad5f6;
+  }
+  .slide-1 {
+    background: url("../images/indian.jpg");
+  }
+  .slide-2 {
+    background: url("../images/indian2.jpg");
+  }
+  .slide-3 {
+    background: url("../images/image3.avif");
+  }
+
+  .slide {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .caption {
+    background: rgba(0, 0, 0, 0.03);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px 0px;
+  }
+  .caption h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    padding: 18px;
+  }
+  .caption p {
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    color: rgb(255, 250, 250);
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transform: background 500ms;
+  }
+  .arrow img {
+    width: 50px;
+  }
+
+  .span-title {
+    color: #e7272d;
+  }
+  .arrow:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .l {
+    left: 0;
+  }
+  .r {
+    right: 0;
+  }
+
+  .signature-dishes-section {
+    margin-top: 8%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signature-dishes-heading {
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    color: black;
+  }
+
+  .left-border {
+    border-color: #e7272d;
+    border-top: 5px solid red;
+  }
+
+  .menu-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    margin-top: 5%;
+    /* border: 2px solid green; */
+  }
+  .hr-style {
+    width: 80px;
+    height: 1px;
+    border: 1px solid #e7272d;
+  }
+  .hr-style-footer-item {
+    margin-top: 5%;
+    width: 40px;
+    height: 1px;
+    border: 1px solid #d38116;
+  }
+
+  .special-menu {
+    font-size: 18px;
+    color: #e7272d;
+    font-family: Roboto Slab, sans-serif;
+    letter-spacing: 4px;
+  }
+
+  .menu-items-section {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+  }
+
+  .menu-items-section1,
+  .menu-items-section2 {
+    width: 32%;
+    /* border: 2px solid  green; */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu-item-title {
+    font-family: Oswald, sans-serif;
+    color: #646464;
+    /* font-weight: 600; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+    width: 160px;
+    /* border: 2px solid red; */
+    line-height: 26px;
+    font-size: 20px;
+  }
+
+  .parallax {
+    position: relative;
+    margin-top: 5%;
+    /* The image used */
+    background-image: url("../images/parallax-image2.jpg");
+
+    /* Set a specific height */
+    min-height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .text-parallax {
+    position: absolute;
+    font-family: Oswald, sans-serif;
+    top: 40%;
+    left: 5%;
+    text-align: left;
+    font-size: 30px;
+    width: 400px;
+    /* border: 2px solid green; */
+    color: white;
+  }
+
+  .weekends-prallax-text {
+    color: #e7272d;
+  }
+
+  .restaurants-section {
+    margin-top: 8%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5%;
+  }
+
+  .restaurant-item {
+    width: 320px;
+    height: 320px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 1%;
+    /* border: 2px solid purple; */
+  }
+
+  .restaurant-item:hover {
+    border: 2px solid rgb(243, 178, 125);
+    cursor: pointer;
+  }
+
+  .rest-image-section {
+    width: 100%;
+    height: 180px;
+  }
+  .rest-image-section img {
+    width: 100%;
+    height: 100%;
+  }
+  .rest-details {
+    /* padding-left: 5%; */
+    padding-top: 5%;
+  }
+
+  .rest-title p:first-child {
+    font-weight: bold;
+    color: #282c3f;
+    font-size: 18px;
+    font-family: "Philosopher", sans-serif;
+  }
+
+  .sub-title {
+    color: #4e4f53;
+    font-size: 15px;
+    margin-top: 4px;
+    font-family: "Philosopher", sans-serif;
+  }
+
+  .rest-minutes-details {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #393a3b;
+    font-size: 14px;
+    font-family: "Philosopher", sans-serif;
+  }
+
+  .rating {
+    background-color: #db7c38;
+    color: #fff;
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+    height: 25px;
+
+    border-radius: 2px;
+    font-family: "Philosopher", sans-serif;
+  }
+
+  .valuable-clients-heading {
+    width: 90%;
+    margin-top: 10%;
+    /* margin: 0px auto; */
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    color: black;
+  }
+
+  .valuable-clients-section {
+    background-color: #bb5d19;
+    padding-bottom: 10%;
+  }
+
+  .valuable-clients {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+  }
+
+  .hr-style-client {
+    width: 80px;
+    height: 1px;
+    border: 1px solid black;
+  }
+
+  .client-title {
+    font-size: 18px;
+    color: #ebe2e2;
+    font-family: Roboto Slab, sans-serif;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+    margin-top: 2%;
+    /* border: 2px solid green; */
+  }
+
+  .company-image-client {
+    width: 38%;
+    height: 600px;
+    /* border: 2px solid yellow; */
+  }
+
+  .company-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .reviews-section {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    margin-left: -10%;
+  }
+
+  .profile-item1 {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid rgb(102, 102, 17); */
+  }
+
+  .profile-detail {
+    margin-left: 5%;
+    color: white;
+  }
+  .profile-title {
+    padding-top: 5px;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .profile-review {
+    font-family: "Roboto Slab", serif;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .footer-section {
+    background-color: #171a29;
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    font-family: "Helvetica", Sans-serif;
+  }
+
+  .item-width {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+    margin-top: 5%;
+    /* border: 2px solid yellow; */
+    width: 16%;
+  }
+
+  .footer-item-detail {
+    height: 220px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 24px;
+  }
+  .footer-item-detail p {
+    cursor: pointer;
+  }
+
+  .timing-detail {
+    height: 60px;
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-item-heading p {
+    /* font-weight: 600; */
+    font-size: 18px;
+  }
+
+  .copyright-text {
+    font-family: "Helvetica", Sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #bcbcbc;
+    background-color: #2c2929;
+  }
+
+  .mobile-style {
+    margin-top: 0;
+  }
+
+  @media only screen and (min-width: 962px) {
+    .contact-us-hero-image-section {
+      height: 450px;
+      position: relative;
+      /* border: 2px solid red; */
+    }
+
+    .contact-us-hero-image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* border: 2px solid green; */
+    }
+    .contact-us-hero-image-section p {
+      position: absolute;
+      top: 25%;
+      width: 30%;
+      text-align: right;
+      right: 15%;
+      line-height: 30px;
+      height: 130px;
+      font-weight: bold;
+      /* border: 2px solid yellow; */
+      font-family: "Philosopher", sans-serif;
+      /* font-family: "Tajawal", sans-serif; */
+      color: #5a5656;
+      font-size: 35px;
+    }
+
+    .love-style {
+      color: #e7272d;
+    }
+
+    .contact-us-main-div {
+      margin-top: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 750px;
+      /* border: 5px solid purple; */
+      margin-bottom: 10%;
+    }
+
+    .contact-us-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      /* border: 2px solid red; */
+      width: 60%;
+      height: 600px;
+    }
+
+    .inputs-style {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 40px;
+      border-radius: 5px;
+      border: 0.1rem solid rgb(207, 207, 207);
+      text-indent: 10px;
+      font-size: 18px;
+      color: rgb(158, 153, 153);
+    }
+
+    .inputs-style::placeholder {
+      color: rgb(158, 153, 153);
+    }
+
+    .inputs-style:focus {
+      border: 0.1rem solid rgb(122, 116, 116);
+    }
+    .textareaInput {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      border-radius: 5px;
+      border: 0.1rem solid rgb(207, 207, 207);
+      text-indent: 10px;
+      font-size: 18px;
+      color: rgb(158, 153, 153);
+    }
+    .submit-feedback {
+      height: 50px;
+      background: border-box rgb(239, 79, 95);
+      border: 1px solid rgb(239, 79, 95);
+      color: rgb(255, 255, 255);
+      width: 200px;
+      font-family: "Tajawal", sans-serif;
+      border-radius: 8px;
+      font-size: 20px;
+      margin-left: -63%;
+    }
+
+    .submit-feedback:hover {
+      cursor: pointer;
+      background-color: rgb(224, 53, 70);
+    }
+
+    .contact-us-report {
+      /* border: 2px solid green; */
+      width: 40%;
+      margin-left: 3%;
+      margin-right: 3%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .report-item1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: "Tajawal", sans-serif;
+      height: 170px;
+      /* border: 2px solid yellowgreen; */
+      border-radius: 0.8rem;
+      padding: 10px;
+      box-sizing: border-box;
+      background: rgb(255, 255, 255);
+      box-shadow: rgb(28 28 28 / 8%) 0px 0.4rem 0.8rem;
+    }
+
+    .report-heading {
+      font-size: 1.8rem;
+      color: rgb(28, 28, 28);
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+    .report-para {
+      font-size: 1.2rem;
+      color: rgb(79, 79, 79);
+    }
+    .report-link {
+      text-decoration: none;
+      color: rgb(239, 79, 95);
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  /* =============== Contact us - Desktop ====================*/
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Login / Sign Up Form</title>
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="/css/signUpLogin.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+  <!-- Header Navigation -->
+  <div class="navbar-header">
+    <div class="logo-section">
+      <div class="site-logo">
+        <img src="../images/logo.png" alt="logo"/>
+      </div>
+      <p>Curious Appetite</p>
+    </div>
+    <div class="open-nav">&#9776;</div>
+    <div class="nav-items-section">
+      <div class="nav-item"><a>Home</a></div>
+      <div class="nav-item"><a></a>About Us</div>
+      <div class="nav-item">Contact Us</div>
+      <div class="nav-item">SignIn</div>
+    </div>
+  </div>
+  <div class="mainDiv">
+    <div class="container_1">
+      <form class="form" id="login">
+        <h1 class="form__title">Login</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+          <input
+            type="text"
+            class="form__input"
+            autofocus
+            placeholder="Username or email"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="Password"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <button class="form__button" type="submit">Continue</button>
+        <p class="form__text">
+          <a href="#" class="form__link">Forgot your password?</a>
+        </p>
+        <p class="form__text">
+          <a class="form__link" href="./" id="linkCreateAccount"
+            >Don't have an account? Create account</a
+          >
+        </p>
+      </form>
+      <form class="form form--hidden" id="createAccount">
+        <h1 class="form__title">Create Account</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+          <input
+            type="text"
+            id="signupUsername"
+            class="form__input"
+            autofocus
+            placeholder="Username"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="text"
+            class="form__input"
+            autofocus
+            placeholder="Email Address"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="Password"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            class="form__input"
+            autofocus
+            placeholder="Confirm password"
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <button class="form__button" type="submit">Continue</button>
+        <p class="form__text">
+          <a class="form__link" href="./" id="linkLogin"
+            >Already have an account? Sign in</a
+          >
+        </p>
+      </form>
+    </div>
+  </div>
+  <div class="footer-section">
+    <div class="item-width">
+      <div class="footer-item-heading">
+        <p>ABOUT</p>
+        <hr class="hr-style-footer-item" />
+      </div>
+      <div class="footer-item-detail">
+        Curous Appetite is known around the world for their Amazing hospitality
+        and their love for Food. The most famous dishes from Indian cuisine that
+        you have heard are from Punjab. Be it Butter Chicken, Tandoori Chicken,
+        Naan, Dal Makhan and Shahi Paneer.
+      </div>
+    </div>
+    <div class="item-width">
+      <div class="footer-item-heading">
+        <p>COMPANY</p>
+        <hr class="hr-style-footer-item" />
+      </div>
+      <div class="footer-item-detail">
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact Us</p>
+        <p>Locations</p>
+        <p>Book A Table</p>
+      </div>
+    </div>
+    <div class="item-width">
+      <div class="footer-item-heading">
+        <p>CONTACT</p>
+        <hr class="hr-style-footer-item" />
+      </div>
+      <div class="footer-item-detail">
+        <p>Partner with us</p>
+        <p>Help & Support</p>
+        <p>Woodbridge: +1 (905) 256-3024</p>
+        <p>London : +1 (519) 601-2224</p>
+        <p>Mississauga : +1 (905) 795-2929</p>
+        <p>Windsor : +1 (226) 837-0222</p>
+      </div>
+    </div>
+    <div class="item-width">
+      <div class="footer-item-heading">
+        <p>LEARN MORE</p>
+        <hr class="hr-style-footer-item" />
+      </div>
+      <div class="footer-item-detail">
+        <p>Privacy</p>
+        <p>Security</p>
+        <p>Terms</p>
+        <p>Work With Us</p>
+        <p>Report Fraud</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright-text">
+    Copyright © 2022 Curious Appetite| Powered By MK-AP
+  </div>
+  <script src="/js/signup.js"></script>
+  <script src="/js/main.js"></script>
+</body>
