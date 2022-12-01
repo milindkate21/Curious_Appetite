@@ -60,6 +60,16 @@
   display: none;
 }
 
+.nav-item a {
+  text-decoration: none;
+  color: #3d4152;
+}
+
+.nav-item a:hover {
+  color: rgb(252, 128, 25);
+  cursor: pointer;
+}
+
 /* ========== END OF NAVIGatION BAR ============== */
 
 /* ============== START - SLIDER  ================ */
@@ -479,7 +489,6 @@
   border: 1px solid #d38116;
 }
 
-
 /*  =============== FOOTER - END ============= */
 
 /* ================ COPYRIGHT - START ============== */
@@ -497,6 +506,146 @@
 }
 
 /* ================ COPYRIGHT - END ============== */
+
+/* ======================= CONTACT US ==================== */
+.contact-us-hero-image-section {
+  height: 250px;
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.contact-us-hero-image-section img {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid green; */
+}
+.contact-us-hero-image-section p {
+  position: absolute;
+  top: 25%;
+  width: 250px;
+  text-align: right;
+  right: 4%;
+  line-height: 30px;
+  height: 130px;
+  font-weight: bold;
+  /* border: 2px solid yellow; */
+  font-family: "Philosopher", sans-serif;
+  /* font-family: "Tajawal", sans-serif; */
+  color: #f3eaea;
+  font-size: 35px;
+}
+
+.love-style {
+  color: #e7272d;
+}
+
+.contact-us-main-div {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 1300px;
+  /* border: 5px solid purple; */
+  margin-bottom: 10%;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 600px;
+}
+
+.inputs-style {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 40px;
+  border-radius: 5px;
+  border: 0.1rem solid rgb(207, 207, 207);
+  text-indent: 10px;
+  font-size: 18px;
+  color: rgb(158, 153, 153);
+}
+
+.inputs-style::placeholder {
+  color: rgb(158, 153, 153);
+}
+
+.inputs-style:focus {
+  border: 0.1rem solid rgb(122, 116, 116);
+}
+.textareaInput {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  border: 0.1rem solid rgb(207, 207, 207);
+  text-indent: 10px;
+  font-size: 18px;
+  color: rgb(158, 153, 153);
+}
+.submit-feedback {
+  height: 50px;
+  background: border-box rgb(239, 79, 95);
+  border: 1px solid rgb(239, 79, 95);
+  color: rgb(255, 255, 255);
+  width: 200px;
+  font-family: "Tajawal", sans-serif;
+  border-radius: 8px;
+  font-size: 20px;
+  margin-left: -48%;
+}
+
+.submit-feedback:hover {
+  cursor: pointer;
+  background-color: rgb(224, 53, 70);
+}
+
+.contact-us-report {
+  /* border: 2px solid green; */
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.report-item1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Tajawal", sans-serif;
+  height: 170px;
+  /* border: 2px solid yellowgreen; */
+  border-radius: 0.8rem;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(28 28 28 / 8%) 0px 0.4rem 0.8rem;
+}
+
+.report-heading {
+  font-size: 1.8rem;
+  color: rgb(28, 28, 28);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.report-para {
+  font-size: 1.2rem;
+  color: rgb(79, 79, 79);
+}
+.report-link {
+  text-decoration: none;
+  color: rgb(239, 79, 95);
+  font-weight: bold;
+  font-size: 18px;
+}
 
 @media only screen and (min-width: 962px) {
   .navbar-header {
@@ -520,6 +669,15 @@
     color: #3d4152;
     font-size: 20px;
     font-weight: 600;
+  }
+  .nav-item a {
+    text-decoration: none;
+    color: #3d4152;
+  }
+
+  .nav-item a:hover {
+    color: rgb(252, 128, 25);
+    cursor: pointer;
   }
   .open-nav {
     display: none;
@@ -570,11 +728,6 @@
     /* font-family: 'Play', sans-serif; */
     font-family: "Tajawal", sans-serif;
     margin-left: 12%;
-  }
-
-  .nav-item:hover {
-    color: rgb(252, 128, 25);
-    cursor: pointer;
   }
 
   /* .hero-image-section p {
@@ -1011,4 +1164,148 @@
   .mobile-style {
     margin-top: 0;
   }
+
+  @media only screen and (min-width: 962px) {
+    .contact-us-hero-image-section {
+      height: 450px;
+      position: relative;
+      /* border: 2px solid red; */
+    }
+
+    .contact-us-hero-image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* border: 2px solid green; */
+    }
+    .contact-us-hero-image-section p {
+      position: absolute;
+      top: 25%;
+      width: 30%;
+      text-align: right;
+      right: 15%;
+      line-height: 30px;
+      height: 130px;
+      font-weight: bold;
+      /* border: 2px solid yellow; */
+      font-family: "Philosopher", sans-serif;
+      /* font-family: "Tajawal", sans-serif; */
+      color: #5a5656;
+      font-size: 35px;
+    }
+
+    .love-style {
+      color: #e7272d;
+    }
+
+    .contact-us-main-div {
+      margin-top: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 750px;
+      /* border: 5px solid purple; */
+      margin-bottom: 10%;
+    }
+
+    .contact-us-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      /* border: 2px solid red; */
+      width: 60%;
+      height: 600px;
+    }
+
+    .inputs-style {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 40px;
+      border-radius: 5px;
+      border: 0.1rem solid rgb(207, 207, 207);
+      text-indent: 10px;
+      font-size: 18px;
+      color: rgb(158, 153, 153);
+    }
+
+    .inputs-style::placeholder {
+      color: rgb(158, 153, 153);
+    }
+
+    .inputs-style:focus {
+      border: 0.1rem solid rgb(122, 116, 116);
+    }
+    .textareaInput {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      border-radius: 5px;
+      border: 0.1rem solid rgb(207, 207, 207);
+      text-indent: 10px;
+      font-size: 18px;
+      color: rgb(158, 153, 153);
+    }
+    .submit-feedback {
+      height: 50px;
+      background: border-box rgb(239, 79, 95);
+      border: 1px solid rgb(239, 79, 95);
+      color: rgb(255, 255, 255);
+      width: 200px;
+      font-family: "Tajawal", sans-serif;
+      border-radius: 8px;
+      font-size: 20px;
+      margin-left: -63%;
+    }
+
+    .submit-feedback:hover {
+      cursor: pointer;
+      background-color: rgb(224, 53, 70);
+    }
+
+    .contact-us-report {
+      /* border: 2px solid green; */
+      width: 40%;
+      margin-left: 3%;
+      margin-right: 3%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .report-item1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: "Tajawal", sans-serif;
+      height: 170px;
+      /* border: 2px solid yellowgreen; */
+      border-radius: 0.8rem;
+      padding: 10px;
+      box-sizing: border-box;
+      background: rgb(255, 255, 255);
+      box-shadow: rgb(28 28 28 / 8%) 0px 0.4rem 0.8rem;
+    }
+
+    .report-heading {
+      font-size: 1.8rem;
+      color: rgb(28, 28, 28);
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+    .report-para {
+      font-size: 1.2rem;
+      color: rgb(79, 79, 79);
+    }
+    .report-link {
+      text-decoration: none;
+      color: rgb(239, 79, 95);
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  /* =============== Contact us - Desktop ====================*/
 }
