@@ -3,14 +3,14 @@
 # WEB DESIGN - PROJECT
 
 ### Group Members: 
-### 1) Milind Kate
-### 2) Ankita Panjwani
+ 1) Milind Kate
+ 2) Ankita Panjwani
 
 ## Work Distribution:
 
-### We had divided the project into two parts:
+We had divided the project into two parts:
 
-### Among the 4 pages of the whole website; we divided 2 pages to each of the group members.
+Among the 4 pages of the whole website; we divided 2 pages to each of the group members.
 
 
 ### Ankita: I was working on Home Page/Landing Page and Contact Us Page.
