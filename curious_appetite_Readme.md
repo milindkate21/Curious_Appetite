@@ -1,30 +1,26 @@
 # Curious_Appetite
 
-# Building Websites With HTML, CSS, and JavaScript: Getting Started
+# WEB DESIGN - PROJECT
 
-## Tools
+### Group Members: 
+### 1) Milind Kate
+### 2) Ankita Panjwani
 
-The following tools help make easier to work with sample code.
+## Work Distribution:
 
-- [git](https://git-scm.com/downloads): A tool for managing source code
-- [Visual Studio Code](https://code.visualstudio.com/): A source code editor
-- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): A simple web server utility for Visual Studio Code
-- [Echo Post](https://github.com/craigshoemaker/echo-post): A simple Node.js server utility that displays post data.
+### We had divided the project into two parts:
 
-## Setup
+### Among the 4 pages of the whole website; we divided 2 pages to each of the group members.
 
-If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 
-[Download the ZIP from this location](https://github.com/craigshoemaker/html-css-javascript-getting-started/archive/master.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+### Ankita: I was working on Home Page/Landing Page and Contact Us Page.
+I started with building the header which is needed on all pages of the website that we are building. Then I have tried to make the landing pages attractive by adding image slider which represents food items and also a parallax which grabs the attention of the user.I have used mobile first approach for the designing part and I have used form in the contact us page as we are asking users for their feedback.
 
-```bash
-git clone https://github.com/craigshoemaker/html-css-javascript-getting-started
-```
+### Milind: I was working on Product Detail Page and SignIn/SignUp Page. 
 
-- Once the files are on your machine, open the _html-css-javascript-getting-started_ folder in [Visual Studio Code](https://code.visualstudio.com/).
 
-- With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+### Web Accessibility:
 
-## Resources
+For our website's web accessibility we have added alt attribute in all the image tags that we have used. For the disabled people, we have also added tabindex for the screen readers to read out the content. And we have included aria-label attribute for giving accessible names to different sections of our website. Moreover, we have also placed other attributes like name, placeholder and value wherever necessary in the whole website to improve web accessibility.
 
-A list of links to resources used throughout this course is available on the [Resources](resources.md) page.
+### Search Engine Optimization:
