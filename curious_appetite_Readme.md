@@ -1,6 +1,4 @@
-# Curious_Appetite
-
-# WEB DESIGN - PROJECT
+# Curious_Appetite - WEB DESIGN - PROJECT
 
 ### Group Members: 
  1) Milind Kate
