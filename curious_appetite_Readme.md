@@ -1,6 +1,6 @@
 # Curious_Appetite - WEB DESIGN - PROJECT
 
-### Group Members: 
+## Group Members: 
  1) Milind Kate
  2) Ankita Panjwani
 
