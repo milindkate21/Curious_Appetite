@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Home</title>
+    <meta
+      name="keywords"
+      content="Curious Appetite, 
+      INDIAN CUISINE, BEST PLACE FOR HANGOUTS, Indian, Chineese, Tandoor, Mughlai, Biryani, D Maccoy, samose with chole, THE PERFECT FOOD, restaurant, Desserts, Online ordering help, Submit Feedback, SignIn, Home , Contact Us, Issue with your live order?, Report Fraud , Partner with us, Book A Table, hospitality, Tandoori Chicken, Naan, Dal Makhan "
+    />
+
+    <meta
+      name="description"
+      content="Curious Appetite's are known around the world for their amazing hospitality and their love for food. The most famous dishes from Indian cuisine that you have heard from Gujarat, Punjab. Be it Butter Chicken, Tandoori Chicken, Palak Paneer, Naan, Dal Makhani and Shahi Paneer. We are bringing to you the unique authentic experience, Our food is tastefully curated with unique dishes that you will not even find in any other Indian Restaurants."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Play&display=swap"
-      rel="stylesheet"
-    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap"
       rel="stylesheet"
@@ -23,10 +26,7 @@
       href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
-      rel="stylesheet"
-    /> -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
       rel="stylesheet"
@@ -41,26 +41,45 @@
     <!-- Header Navigation -->
     <div class="navbar-header">
       <div class="logo-section">
-        <div class="site-logo">
-          <img src="../images/logo.png" />
-        </div>
+        <a href="../html/home.html">
+          <div class="site-logo" tabindex="1">
+            <img
+              src="../images/curious-appetite.png"
+              alt="curious appetite logo"
+            />
+          </div>
+        </a>
         <p>Curious Appetite</p>
       </div>
-      <div class="open-nav">
-        &#9776;
-      </div>
+      <div class="open-nav" onclick="openNav()">&#9776;</div>
       <div class="nav-items-section">
         <div class="nav-item"><a href="./home.html">Home</a></div>
         <div class="nav-item"><a href="#">About Us</a></div>
-        <div class="nav-item"><a href="../html/contactUs.html">Contact Us</a></div>
+        <div class="nav-item">
+          <a href="../html/contactUs.html">Contact Us</a>
+        </div>
         <div class="nav-item"><a href="#">SignIn</a></div>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a
+          href="javascript:void(0)"
+          class="closebtn"
+          role="button"
+          onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="../html/home.html" role="button">Home</a>
+        <a href="#" role="button">About Us</a>
+        <a href="../html/contactUs.html" role="button">Contact Us</a>
+        <a href="#" role="button">SignIn</a>
       </div>
     </div>
 
     <!-- Hero Image section  -->
     <div class="container">
       <div class="arrow l" onclick="prev()">
-        <img src="../images/l.png" alt="l" />
+        <img src="../images/l.png" alt="left arrow" />
       </div>
       <div class="slide slide-1">
         <div class="caption">
@@ -80,11 +99,14 @@
         </div>
       </div>
       <div class="arrow r" onclick="next()">
-        <img src="../images/r.png" alt="r" />
+        <img src="../images/r.png" alt="right arrow" />
       </div>
     </div>
 
-    <div class="signature-dishes-section">
+    <div
+      class="signature-dishes-section"
+      aria-labelledby="popular-dishes-section"
+    >
       <h1 class="signature-dishes-heading">OUR SIGNATURE DISHES</h1>
       <div class="menu-title">
         <hr class="hr-style" />
@@ -97,7 +119,10 @@
       <div class="menu-items-section1">
         <div class="menu-item">
           <div>
-            <img src="../images/butter-chicken.jpg" />
+            <img
+              src="../images/butter-chicken.jpg"
+              alt="butter chicken food item"
+            />
           </div>
           <div class="menu-item-title">
             <p>BUTTER CHICKEN</p>
@@ -106,7 +131,7 @@
         </div>
         <div class="menu-item">
           <div>
-            <img src="../images/gulab-jamun.jpg" />
+            <img src="../images/gulab-jamun.jpg" alt="gulab jamun food item" />
           </div>
           <div class="menu-item-title">
             <p>GULAB JAMUN</p>
@@ -115,7 +140,10 @@
         </div>
         <div class="menu-item">
           <div>
-            <img src="../images/methi-malai-mutter.jpg" />
+            <img
+              src="../images/methi-malai-mutter.jpg"
+              alt="malai mutter food item"
+            />
           </div>
           <div class="menu-item-title">
             <p>METHI MALAI MUTTER</p>
@@ -126,7 +154,7 @@
       <div class="menu-items-section2 mobile-style">
         <div class="menu-item">
           <div>
-            <img src="../images/veg-pakoda.jpg" />
+            <img src="../images/veg-pakoda.jpg" alt="veg pakoda food item" />
           </div>
           <div class="menu-item-title">
             <p>VEG PAKODA</p>
@@ -136,7 +164,7 @@
 
         <div class="menu-item">
           <div>
-            <img src="../images/malai-kofta.jpg" />
+            <img src="../images/malai-kofta.jpg" alt="malai kofta food item" />
           </div>
           <div class="menu-item-title">
             <p>MALAI KOFTA</p>
@@ -145,7 +173,10 @@
         </div>
         <div class="menu-item">
           <div>
-            <img src="../images/chana-masala.jpg" />
+            <img
+              src="../images/chana-masala.jpg"
+              alt="chana masala food item"
+            />
           </div>
           <div class="menu-item-title">
             <p>CHANA MASALA</p>
@@ -155,7 +186,7 @@
       </div>
     </div>
 
-    <div class="parallax">
+    <div class="parallax" aria-labelledby="parallax-section-home-page">
       <div class="text-parallax">
         <p>
           BEST PLACE FOR HANGOUTS ON
@@ -176,7 +207,7 @@
     <div class="restaurants">
       <div class="restaurant-item">
         <div class="rest-image-section">
-          <img src="../images/sahara-rest.jpg" />
+          <img src="../images/sahara-rest.jpg" alt="sahara restaurant pic 1" />
         </div>
         <div class="rest-details">
           <div class="rest-title">
@@ -196,11 +227,11 @@
       </div>
       <div class="restaurant-item">
         <div class="rest-image-section">
-          <img src="../images/sahara-rest.jpg" />
+          <img src="../images/veg_sutra.webp" alt="restaurant pic 2" />
         </div>
         <div class="rest-details">
           <div class="rest-title">
-            <p>Sahara Restaurant</p>
+            <p>Trupti Restaurant</p>
             <p class="sub-title">
               Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
             </p>
@@ -216,11 +247,11 @@
       </div>
       <div class="restaurant-item">
         <div class="rest-image-section">
-          <img src="../images/sahara-rest.jpg" />
+          <img src="../images/delux.webp" alt="restaurant pic 3" />
         </div>
         <div class="rest-details">
           <div class="rest-title">
-            <p>Sahara Restaurant</p>
+            <p>Delux</p>
             <p class="sub-title">
               Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
             </p>
@@ -236,11 +267,11 @@
       </div>
       <div class="restaurant-item">
         <div class="rest-image-section">
-          <img src="../images/sahara-rest.jpg" />
+          <img src="../images/persian_darbar.webp" alt="restaurant pic 4" />
         </div>
         <div class="rest-details">
           <div class="rest-title">
-            <p>Sahara Restaurant</p>
+            <p>Chatkazz</p>
             <p class="sub-title">
               Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
             </p>
@@ -256,11 +287,11 @@
       </div>
       <div class="restaurant-item">
         <div class="rest-image-section">
-          <img src="../images/sahara-rest.jpg" />
+          <img src="../images/pizzas_italian.webp" alt="restaurant pic 5" />
         </div>
         <div class="rest-details">
           <div class="rest-title">
-            <p>Sahara Restaurant</p>
+            <p>Italiano</p>
             <p class="sub-title">
               Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
             </p>
@@ -276,11 +307,11 @@
       </div>
       <div class="restaurant-item">
         <div class="rest-image-section">
-          <img src="../images/sahara-rest.jpg" />
+          <img src="../images/janta_tawa.webp" alt="restaurant pic 6" />
         </div>
         <div class="rest-details">
           <div class="rest-title">
-            <p>Sahara Restaurant</p>
+            <p>Khao Gali</p>
             <p class="sub-title">
               Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
             </p>
@@ -310,11 +341,17 @@
           <img
             class="company-img"
             src="../images/punjabi-rest-image-client.jpg"
+            alt="Image of company"
           />
         </div>
         <div class="reviews-section">
           <div class="profile-item1">
-            <div><img src="../images/profile-1.png" /></div>
+            <div>
+              <img
+                src="../images/profile-1.png"
+                alt="first review giver image"
+              />
+            </div>
             <div class="profile-detail">
               <p class="profile-title">D Maccoy</p>
               <p>&#x2606; &#x2606; &#x2606; &#x2606; &#x2606;</p>
@@ -329,13 +366,18 @@
             </div>
           </div>
           <div class="profile-item1">
-            <div><img src="../images/profile-2.png" /></div>
+            <div>
+              <img
+                src="../images/profile-2.png"
+                alt="second review giver image"
+              />
+            </div>
             <div class="profile-detail">
               <p class="profile-title">D Maccoy</p>
               <p>&#x2606; &#x2606; &#x2606; &#x2606; &#x2606;</p>
               <p class="profile-review">
                 The food was delicious and worth the price. I recommend everyone
-                to visit once here. We tried samomse with chole, tikki chat ana
+                to visit once here. We tried samose with chole, tikki chat ana
                 soya malai chaap.
               </p>
             </div>
@@ -351,10 +393,10 @@
           <hr class="hr-style-footer-item" />
         </div>
         <div class="footer-item-detail">
-          Curous Appetite is known around the world for their Amazing hospitality and
-          their love for Food. The most famous dishes from Indian cuisine that
-          you have heard are from Punjab. Be it Butter Chicken, Tandoori
-          Chicken, Naan, Dal Makhan and Shahi Paneer.
+          Curous Appetite is known around the world for their Amazing
+          hospitality and their love for Food. The most famous dishes from
+          Indian cuisine that you have heard are from Punjab. Be it Butter
+          Chicken, Tandoori Chicken, Naan, Dal Makhan and Shahi Paneer.
         </div>
       </div>
       <div class="item-width">

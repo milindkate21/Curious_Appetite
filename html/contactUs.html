@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curious Appetite</title>
+    <title>Contact Us</title>
+    <meta
+      name="keywords"
+      content="Curious Appetite, Online ordering help, Submit Feedback, SignIn, Home , Contact Us, Issue with your live order?, Report Fraud , Partner with us, Book A Table, hospitality, Tandoori Chicken, Naan, Dal Makhan "
+    />
+
+    <meta
+      name="description"
+      content="We are committed to the safety of everyone using Curious Appetite. To make sure we collectively work towards building the highest-quality content that's useful to everyone, reviews need to be a minimum of 140 characters long for dine-in reviews. That's just about the length of a tweet, so it's convenient even for all you micro-bloggers. Feedback is really essential to maintain customer relationship."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Play&display=swap"
-      rel="stylesheet"
-    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap"
       rel="stylesheet"
@@ -23,10 +25,6 @@
       href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
-      rel="stylesheet"
-    /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
       rel="stylesheet"
@@ -39,38 +37,57 @@
   </head>
   <body>
     <!-- MOBILE FIRST APPROACH -  BASE CSS -->
+
     <!-- Header Navigation -->
-    <div class="navbar-header">
+    <header class="navbar-header" aria-labelledby="logo-section" tabindex="0">
       <div class="logo-section">
-        <div class="site-logo">
-          <img src="../images/logo.png" />
-        </div>
+        <a href="../html/home.html">
+          <div class="site-logo" tabindex="1">
+            <img src="../images/logo.png" alt="curious appetite logo" />
+          </div>
+        </a>
         <p>Curious Appetite</p>
       </div>
-      <div class="open-nav">&#9776;</div>
+      <div class="open-nav" onclick="openNav()">&#9776;</div>
       <div class="nav-items-section">
-        <div class="nav-item"><a href="./home.html">Home</a></div>
-        <div class="nav-item"><a href="#">About Us</a></div>
+        <div class="nav-item"><a href="./home.html" role="button">Home</a></div>
+        <div class="nav-item"><a href="#" role="button">About Us</a></div>
         <div class="nav-item">
-          <a href="../html/contactUs.html">Contact Us</a>
+          <a href="../html/contactUs.html" role="button">Contact Us</a>
         </div>
-        <div class="nav-item"><a href="#">SignIn</a></div>
+        <div class="nav-item"><a href="#" role="button">SignIn</a></div>
       </div>
-    </div>
-    <!-- CONTACT US - HERO IMAGE -->
-    <div class="contact-us-hero-image-section">
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="../html/home.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="../html/contactUs.html">Contact Us</a>
+        <a href="#">SignIn</a>
+      </div>
+    </header>
+    <!-- CONTACT US - HERO IMAGE SECTION -->
+    <div class="contact-us-hero-image-section" aria-label="heroImage">
       <p>
         We would <span class="love-style">love</span> to hear from
         <span class="love-style">you!</span>
       </p>
-      <img src="../images/contact-us.jpg" />
+      <img src="../images/contact-us.jpg" alt="contact us hero pic" />
     </div>
 
     <div class="contact-us-main-div">
       <!-- CONTACT-US FORM -->
 
       <form action="#" class="contact-us-form">
-        <select class="inputs-style" name="help" id="help" required>
+        <select
+          class="inputs-style"
+          name="help"
+          id="help"
+          required
+          tabindex="1"
+        >
           <option value="How can we help you?&#x2a;">
             How can we help you?&#x2a;
           </option>
@@ -94,32 +111,47 @@
         <input
           class="inputs-style"
           type="text"
+          name="fullName"
           placeholder="Full Name&#x2a;"
           required
+          tabindex="2"
         />
         <input
           class="inputs-style"
           type="email"
+          name="lastName"
           placeholder="Email Address&#x2a;"
           required
+          tabindex="3"
         />
         <input
           class="inputs-style"
           type="text"
+          name="mobileNumber"
+          tabindex="4"
           placeholder="Mobile Number (optional)"
         />
         <textarea
           class="textareaInput"
           placeholder="Type Text"
-          name="text"
+          name="textAreaInput"
           id="text"
           cols="30"
           rows="10"
+          tabindex="5"
         ></textarea>
-        <button type="submit" class="submit-feedback">Submit Feedback</button>
+        <button
+          type="submit"
+          aria-label="feedback"
+          class="submit-feedback"
+          tabindex="6"
+        >
+          Submit Feedback
+        </button>
       </form>
 
-      <div class="contact-us-report">
+      <!-- CONTACT US REPORT SECTION -->
+      <div class="contact-us-report" aria-label="contactUs">
         <div class="report-item1">
           <p class="report-heading">Report a Safety Emergency</p>
           <p class="report-para">
@@ -145,6 +177,8 @@
         </div>
       </div>
     </div>
+
+    <!-- FOOTER SECTION -->
 
     <div class="footer-section">
       <div class="item-width">
@@ -201,8 +235,11 @@
       </div>
     </div>
 
+    <!-- COPYRIGHT SECTION -->
+
     <div class="copyright-text">
       Copyright © 2022 Curious Appetite| Powered By MK-AP
     </div>
+    <script src="../js/main.js"></script>
   </body>
 </html>
