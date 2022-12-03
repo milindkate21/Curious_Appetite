@@ -55,7 +55,7 @@
 }
 
 .nav-item a:hover {
-  color: #e7261d;
+  color: #E7261D;
   cursor: pointer;
 }
 
@@ -671,7 +671,7 @@
   }
 
   .nav-item a:hover {
-    color: #e7261d;
+    color: #E7261D;
     cursor: pointer;
   }
   .open-nav {
@@ -705,7 +705,7 @@
     width: 50%;
   }
   .logo-section p:hover {
-    color: #e7261d;
+    color: #E7261D;
   }
 
   .nav-item {
@@ -789,6 +789,7 @@
 
   /*  PARALLAX SECTION */
 
+
   .text-parallax {
     position: absolute;
     font-family: "Oswald", sans-serif;
@@ -801,7 +802,7 @@
   }
 
   /*  RESTAURANTS - SECTION */
-
+ 
   .restaurants {
     display: flex;
     flex-direction: row;
@@ -818,10 +819,13 @@
     margin-bottom: 1%;
   }
 
+  
+
   .rest-image-section {
     width: 100%;
     height: 180px;
   }
+  
 
   /*  VALUABLE CLIENT SECTION */
 
