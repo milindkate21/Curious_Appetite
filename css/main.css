@@ -298,6 +298,9 @@
   margin-top: 5%;
 }
 
+.restaurants a{
+  text-decoration: none;
+}
 .restaurant-item {
   width: 86%;
   margin-left: 7%;
@@ -781,6 +784,10 @@
     justify-content: space-between;
   }
 
+  .menu-items-section1 a,
+  .menu-items-section2 a{
+    text-decoration: none;
+  }
   .menu-item {
     display: flex;
     flex-direction: row;

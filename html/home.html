@@ -15,6 +15,7 @@
       name="description"
       content="Curious Appetite's are known around the world for their amazing hospitality and their love for food. The most famous dishes from Indian cuisine that you have heard from Gujarat, Punjab. Be it Butter Chicken, Tandoori Chicken, Palak Paneer, Naan, Dal Makhani and Shahi Paneer. We are bringing to you the unique authentic experience, Our food is tastefully curated with unique dishes that you will not even find in any other Indian Restaurants."
     />
+    <meta name="AdsBot-Google" content="noindex">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -52,13 +53,15 @@
         <p>Curious Appetite</p>
       </div>
       <div class="open-nav" onclick="openNav()">&#9776;</div>
-      <div class="nav-items-section">
-        <div class="nav-item"><a href="./home.html">Home</a></div>
-        <div class="nav-item"><a href="#">About Us</a></div>
+      <div class="nav-items-section" >
+        <div class="nav-item"><a href="./home.html" tabindex="2">Home</a></div>
+        <div class="nav-item"><a href="#reviewsSection" tabindex="3">Reviews</a></div>
         <div class="nav-item">
-          <a href="../html/contactUs.html">Contact Us</a>
+          <a href="../html/contactUs.html" tabindex="4">Contact Us</a>
         </div>
-        <div class="nav-item"><a href="#">SignIn</a></div>
+        <div class="nav-item">
+          <a href="../html/signUpLogin.html" tabindex="5">SignIn</a>
+        </div>
       </div>
 
       <div id="mySidenav" class="sidenav">
@@ -70,9 +73,9 @@
           >&times;</a
         >
         <a href="../html/home.html" role="button">Home</a>
-        <a href="#" role="button">About Us</a>
+        <a href="#reviewsSection" role="button">Reviews</a>
         <a href="../html/contactUs.html" role="button">Contact Us</a>
-        <a href="#" role="button">SignIn</a>
+        <a href="../html/signUpLogin.html" role="button">SignIn</a>
       </div>
     </div>
 
@@ -117,72 +120,90 @@
 
     <div class="menu-items-section">
       <div class="menu-items-section1">
-        <div class="menu-item">
-          <div>
-            <img
-              src="../images/butter-chicken.jpg"
-              alt="butter chicken food item"
-            />
+        <a href="../html/product_details.html">
+          <div class="menu-item" tabindex="6">
+            <div>
+              <img
+                src="../images/butter-chicken.jpg"
+                alt="butter chicken food item"
+              />
+            </div>
+            <div class="menu-item-title">
+              <p>BUTTER CHICKEN</p>
+              <hr class="hr-style" />
+            </div>
           </div>
-          <div class="menu-item-title">
-            <p>BUTTER CHICKEN</p>
-            <hr class="hr-style" />
+        </a>
+
+        <a href="../html/product_details.html">
+          <div class="menu-item">
+            <div>
+              <img
+                src="../images/gulab-jamun.jpg"
+                alt="gulab jamun food item"
+              />
+            </div>
+            <div class="menu-item-title">
+              <p>GULAB JAMUN</p>
+              <hr class="hr-style" />
+            </div>
           </div>
-        </div>
-        <div class="menu-item">
-          <div>
-            <img src="../images/gulab-jamun.jpg" alt="gulab jamun food item" />
+        </a>
+        <a href="../html/product_details.html">
+          <div class="menu-item">
+            <div>
+              <img
+                src="../images/methi-malai-mutter.jpg"
+                alt="malai mutter food item"
+              />
+            </div>
+            <div class="menu-item-title">
+              <p>METHI MALAI MUTTER</p>
+              <hr class="hr-style" />
+            </div>
           </div>
-          <div class="menu-item-title">
-            <p>GULAB JAMUN</p>
-            <hr class="hr-style" />
-          </div>
-        </div>
-        <div class="menu-item">
-          <div>
-            <img
-              src="../images/methi-malai-mutter.jpg"
-              alt="malai mutter food item"
-            />
-          </div>
-          <div class="menu-item-title">
-            <p>METHI MALAI MUTTER</p>
-            <hr class="hr-style" />
-          </div>
-        </div>
+        </a>
       </div>
       <div class="menu-items-section2 mobile-style">
-        <div class="menu-item">
-          <div>
-            <img src="../images/veg-pakoda.jpg" alt="veg pakoda food item" />
+        <a href="../html/product_details.html">
+          <div class="menu-item">
+            <div>
+              <img src="../images/veg-pakoda.jpg" alt="veg pakoda food item" />
+            </div>
+            <div class="menu-item-title">
+              <p>VEG PAKODA</p>
+              <hr class="hr-style" />
+            </div>
           </div>
-          <div class="menu-item-title">
-            <p>VEG PAKODA</p>
-            <hr class="hr-style" />
+        </a>
+        <a href="../html/product_details.html">
+          <div class="menu-item">
+            <div>
+              <img
+                src="../images/malai-kofta.jpg"
+                alt="malai kofta food item"
+              />
+            </div>
+            <div class="menu-item-title">
+              <p>MALAI KOFTA</p>
+              <hr class="hr-style" />
+            </div>
           </div>
-        </div>
-
-        <div class="menu-item">
-          <div>
-            <img src="../images/malai-kofta.jpg" alt="malai kofta food item" />
+        </a>
+        <a href="../html/product_details.html">
+          <div class="menu-item">
+            <div>
+              <img
+                src="../images/chana-masala.jpg"
+                alt="chana masala food item"
+              />
+            </div>
+            <div class="menu-item-title">
+              <p>CHANA MASALA</p>
+              <hr class="hr-style" />
+            </div>
           </div>
-          <div class="menu-item-title">
-            <p>MALAI KOFTA</p>
-            <hr class="hr-style" />
-          </div>
-        </div>
-        <div class="menu-item">
-          <div>
-            <img
-              src="../images/chana-masala.jpg"
-              alt="chana masala food item"
-            />
-          </div>
-          <div class="menu-item-title">
-            <p>CHANA MASALA</p>
-            <hr class="hr-style" />
-          </div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -205,129 +226,144 @@
     </div>
 
     <div class="restaurants">
-      <div class="restaurant-item">
-        <div class="rest-image-section">
-          <img src="../images/sahara-rest.jpg" alt="sahara restaurant pic 1" />
-        </div>
-        <div class="rest-details">
-          <div class="rest-title">
-            <p>Sahara Restaurant</p>
-            <p class="sub-title">
-              Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
-            </p>
+      <a href="../html/product_details.html">
+        <div class="restaurant-item">
+          <div class="rest-image-section">
+            <img
+              src="../images/sahara-rest.jpg"
+              alt="sahara restaurant pic 1"
+            />
           </div>
-          <div class="rest-minutes-details">
-            <div class="rating">&#x2606; 3.9</div>
-            <div>•</div>
-            <div>31 MINS</div>
-            <div>•</div>
-            <div>$20 FOR TWO</div>
-          </div>
-        </div>
-      </div>
-      <div class="restaurant-item">
-        <div class="rest-image-section">
-          <img src="../images/veg_sutra.webp" alt="restaurant pic 2" />
-        </div>
-        <div class="rest-details">
-          <div class="rest-title">
-            <p>Trupti Restaurant</p>
-            <p class="sub-title">
-              Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
-            </p>
-          </div>
-          <div class="rest-minutes-details">
-            <div class="rating">&#x2606; 3.9</div>
-            <div>•</div>
-            <div>31 MINS</div>
-            <div>•</div>
-            <div>$20 FOR TWO</div>
+          <div class="rest-details">
+            <div class="rest-title">
+              <p>Sahara Restaurant</p>
+              <p class="sub-title">
+                Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
+              </p>
+            </div>
+            <div class="rest-minutes-details">
+              <div class="rating">&#x2606; 3.9</div>
+              <div>•</div>
+              <div>31 MINS</div>
+              <div>•</div>
+              <div>$20 FOR TWO</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="restaurant-item">
-        <div class="rest-image-section">
-          <img src="../images/delux.webp" alt="restaurant pic 3" />
-        </div>
-        <div class="rest-details">
-          <div class="rest-title">
-            <p>Delux</p>
-            <p class="sub-title">
-              Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
-            </p>
+      </a>
+      <a href="../html/product_details.html">
+        <div class="restaurant-item">
+          <div class="rest-image-section">
+            <img src="../images/veg_sutra.webp" alt="restaurant pic 2" />
           </div>
-          <div class="rest-minutes-details">
-            <div class="rating">&#x2606; 3.9</div>
-            <div>•</div>
-            <div>31 MINS</div>
-            <div>•</div>
-            <div>$20 FOR TWO</div>
-          </div>
-        </div>
-      </div>
-      <div class="restaurant-item">
-        <div class="rest-image-section">
-          <img src="../images/persian_darbar.webp" alt="restaurant pic 4" />
-        </div>
-        <div class="rest-details">
-          <div class="rest-title">
-            <p>Chatkazz</p>
-            <p class="sub-title">
-              Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
-            </p>
-          </div>
-          <div class="rest-minutes-details">
-            <div class="rating">&#x2606; 3.9</div>
-            <div>•</div>
-            <div>31 MINS</div>
-            <div>•</div>
-            <div>$20 FOR TWO</div>
+          <div class="rest-details">
+            <div class="rest-title">
+              <p>Trupti Restaurant</p>
+              <p class="sub-title">
+                Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
+              </p>
+            </div>
+            <div class="rest-minutes-details">
+              <div class="rating">&#x2606; 3.9</div>
+              <div>•</div>
+              <div>31 MINS</div>
+              <div>•</div>
+              <div>$20 FOR TWO</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="restaurant-item">
-        <div class="rest-image-section">
-          <img src="../images/pizzas_italian.webp" alt="restaurant pic 5" />
-        </div>
-        <div class="rest-details">
-          <div class="rest-title">
-            <p>Italiano</p>
-            <p class="sub-title">
-              Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
-            </p>
+      </a>
+      <a href="../html/product_details.html">
+        <div class="restaurant-item">
+          <div class="rest-image-section">
+            <img src="../images/delux.webp" alt="restaurant pic 3" />
           </div>
-          <div class="rest-minutes-details">
-            <div class="rating">&#x2606; 3.9</div>
-            <div>•</div>
-            <div>31 MINS</div>
-            <div>•</div>
-            <div>$20 FOR TWO</div>
-          </div>
-        </div>
-      </div>
-      <div class="restaurant-item">
-        <div class="rest-image-section">
-          <img src="../images/janta_tawa.webp" alt="restaurant pic 6" />
-        </div>
-        <div class="rest-details">
-          <div class="rest-title">
-            <p>Khao Gali</p>
-            <p class="sub-title">
-              Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
-            </p>
-          </div>
-          <div class="rest-minutes-details">
-            <div class="rating">&#x2606; 3.9</div>
-            <div>•</div>
-            <div>31 MINS</div>
-            <div>•</div>
-            <div>$20 FOR TWO</div>
+          <div class="rest-details">
+            <div class="rest-title">
+              <p>Delux</p>
+              <p class="sub-title">
+                Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
+              </p>
+            </div>
+            <div class="rest-minutes-details">
+              <div class="rating">&#x2606; 3.9</div>
+              <div>•</div>
+              <div>31 MINS</div>
+              <div>•</div>
+              <div>$20 FOR TWO</div>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
+      <a href="../html/product_details.html">
+        <div class="restaurant-item">
+          <div class="rest-image-section">
+            <img src="../images/persian_darbar.webp" alt="restaurant pic 4" />
+          </div>
+          <div class="rest-details">
+            <div class="rest-title">
+              <p>Chatkazz</p>
+              <p class="sub-title">
+                Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
+              </p>
+            </div>
+            <div class="rest-minutes-details">
+              <div class="rating">&#x2606; 3.9</div>
+              <div>•</div>
+              <div>31 MINS</div>
+              <div>•</div>
+              <div>$20 FOR TWO</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="../html/product_details.html">
+        <div class="restaurant-item">
+          <div class="rest-image-section">
+            <img src="../images/pizzas_italian.webp" alt="restaurant pic 5" />
+          </div>
+          <div class="rest-details">
+            <div class="rest-title">
+              <p>Italiano</p>
+              <p class="sub-title">
+                Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
+              </p>
+            </div>
+            <div class="rest-minutes-details">
+              <div class="rating">&#x2606; 3.9</div>
+              <div>•</div>
+              <div>31 MINS</div>
+              <div>•</div>
+              <div>$20 FOR TWO</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="../html/product_details.html">
+        <div class="restaurant-item">
+          <div class="rest-image-section">
+            <img src="../images/janta_tawa.webp" alt="restaurant pic 6" />
+          </div>
+          <div class="rest-details">
+            <div class="rest-title">
+              <p>Khao Gali</p>
+              <p class="sub-title">
+                Indian, Chineese, Tandoor, Mughlai, Biryani, Desserts
+              </p>
+            </div>
+            <div class="rest-minutes-details">
+              <div class="rating">&#x2606; 3.9</div>
+              <div>•</div>
+              <div>31 MINS</div>
+              <div>•</div>
+              <div>$20 FOR TWO</div>
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
 
-    <div class="valuable-clients-section">
+    <div class="valuable-clients-section" id="reviewsSection">
       <div class="restaurants-section">
         <h1 class="valuable-clients-heading">OUR VALUABLE CLIENT</h1>
         <div class="client-title">
@@ -393,7 +429,7 @@
           <hr class="hr-style-footer-item" />
         </div>
         <div class="footer-item-detail">
-          Curous Appetite is known around the world for their Amazing
+          Curious Appetite is known around the world for their Amazing
           hospitality and their love for Food. The most famous dishes from
           Indian cuisine that you have heard are from Punjab. Be it Butter
           Chicken, Tandoori Chicken, Naan, Dal Makhan and Shahi Paneer.
