@@ -39,35 +39,42 @@
     <!-- MOBILE FIRST APPROACH -  BASE CSS -->
 
     <!-- Header Navigation -->
-    <header class="navbar-header" aria-labelledby="logo-section" tabindex="0">
+    <div class="navbar-header">
       <div class="logo-section">
         <a href="../html/home.html">
           <div class="site-logo" tabindex="1">
-            <img src="../images/logo.png" alt="curious appetite logo" />
+            <img
+              src="../images/curious-appetite.png"
+              alt="curious appetite logo"
+            />
           </div>
         </a>
         <p>Curious Appetite</p>
       </div>
       <div class="open-nav" onclick="openNav()">&#9776;</div>
       <div class="nav-items-section">
-        <div class="nav-item"><a href="./home.html" role="button">Home</a></div>
-        <div class="nav-item"><a href="#" role="button">About Us</a></div>
+        <div class="nav-item"><a href="./home.html">Home</a></div>
+        <div class="nav-item"><a href="#">About Us</a></div>
         <div class="nav-item">
-          <a href="../html/contactUs.html" role="button">Contact Us</a>
+          <a href="../html/contactUs.html">Contact Us</a>
         </div>
-        <div class="nav-item"><a href="#" role="button">SignIn</a></div>
+        <div class="nav-item"><a href="../html/signUpLogin.html">SignIn</a></div>
       </div>
 
       <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        <a
+          href="javascript:void(0)"
+          class="closebtn"
+          role="button"
+          onclick="closeNav()"
           >&times;</a
         >
-        <a href="../html/home.html">Home</a>
-        <a href="#">About Us</a>
-        <a href="../html/contactUs.html">Contact Us</a>
-        <a href="#">SignIn</a>
+        <a href="../html/home.html" role="button">Home</a>
+        <a href="#" role="button">About Us</a>
+        <a href="../html/contactUs.html" role="button">Contact Us</a>
+        <a href="../html/signUpLogin.html" role="button">SignIn</a>
       </div>
-    </header>
+    </div>
     <!-- CONTACT US - HERO IMAGE SECTION -->
     <div class="contact-us-hero-image-section" aria-label="heroImage">
       <p>

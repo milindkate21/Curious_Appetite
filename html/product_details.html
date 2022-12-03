@@ -23,17 +23,38 @@
     <!-- Header Navigation -->
     <div class="navbar-header">
       <div class="logo-section">
-        <div class="site-logo">
-          <img src="../images/logo.png" alt="logo" />
-        </div>
+        <a href="../html/home.html">
+          <div class="site-logo" tabindex="1">
+            <img
+              src="../images/curious-appetite.png"
+              alt="curious appetite logo"
+            />
+          </div>
+        </a>
         <p>Curious Appetite</p>
       </div>
-      <div class="open-nav">&#9776;</div>
+      <div class="open-nav" onclick="openNav()">&#9776;</div>
       <div class="nav-items-section">
-        <div class="nav-item"><a>Home</a></div>
-        <div class="nav-item"><a></a>About Us</div>
-        <div class="nav-item">Contact Us</div>
-        <div class="nav-item">SignIn</div>
+        <div class="nav-item"><a href="./home.html">Home</a></div>
+        <div class="nav-item"><a href="#">About Us</a></div>
+        <div class="nav-item">
+          <a href="../html/contactUs.html">Contact Us</a>
+        </div>
+        <div class="nav-item"><a href="../html/signUpLogin.html">SignIn</a></div>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a
+          href="javascript:void(0)"
+          class="closebtn"
+          role="button"
+          onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="../html/home.html" role="button">Home</a>
+        <a href="#" role="button">About Us</a>
+        <a href="../html/contactUs.html" role="button">Contact Us</a>
+        <a href="../html/signUpLogin.html" role="button">SignIn</a>
       </div>
     </div>
 
