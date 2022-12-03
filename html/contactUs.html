@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <meta
+      name="keywords"
+      content="Curious Appetite, Online ordering help, Submit Feedback, SignIn, Home , Contact Us, Issue with your live order?, Report Fraud , Partner with us, Book A Table, hospitality, Tandoori Chicken, Naan, Dal Makhan "
+    />
+
+    <meta
+      name="description"
+      content="We are committed to the safety of everyone using Curious Appetite. To make sure we collectively work towards building the highest-quality content that's useful to everyone, reviews need to be a minimum of 140 characters long for dine-in reviews. That's just about the length of a tweet, so it's convenient even for all you micro-bloggers. Feedback is really essential to maintain customer relationship."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- MOBILE FIRST APPROACH -  BASE CSS -->
+
+    <!-- Header Navigation -->
+    <header class="navbar-header" aria-labelledby="logo-section" tabindex="0">
+      <div class="logo-section">
+        <a href="../html/home.html">
+          <div class="site-logo" tabindex="1">
+            <img src="../images/logo.png" alt="curious appetite logo" />
+          </div>
+        </a>
+        <p>Curious Appetite</p>
+      </div>
+      <div class="open-nav" onclick="openNav()">&#9776;</div>
+      <div class="nav-items-section">
+        <div class="nav-item"><a href="./home.html" role="button">Home</a></div>
+        <div class="nav-item"><a href="#" role="button">About Us</a></div>
+        <div class="nav-item">
+          <a href="../html/contactUs.html" role="button">Contact Us</a>
+        </div>
+        <div class="nav-item"><a href="#" role="button">SignIn</a></div>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="../html/home.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="../html/contactUs.html">Contact Us</a>
+        <a href="#">SignIn</a>
+      </div>
+    </header>
+    <!-- CONTACT US - HERO IMAGE SECTION -->
+    <div class="contact-us-hero-image-section" aria-label="heroImage">
+      <p>
+        We would <span class="love-style">love</span> to hear from
+        <span class="love-style">you!</span>
+      </p>
+      <img src="../images/contact-us.jpg" alt="contact us hero pic" />
+    </div>
+
+    <div class="contact-us-main-div">
+      <!-- CONTACT-US FORM -->
+
+      <form action="#" class="contact-us-form">
+        <select
+          class="inputs-style"
+          name="help"
+          id="help"
+          required
+          tabindex="1"
+        >
+          <option value="How can we help you?&#x2a;">
+            How can we help you?&#x2a;
+          </option>
+          <option value="I found incorrect/outdated information on a page.">
+            I found incorrect/outdated information on a page.
+          </option>
+          <option
+            value="There is a photo/review that is bothering me and I would like to report it."
+          >
+            There is a photo/review that is bothering me and I would like to
+            report it.
+          </option>
+          <option value="I would like to give feedback/suggestions.">
+            I would like to give feedback/suggestions.
+          </option>
+          <option value="I need some help with my blog.">
+            I need some help with my blog.
+          </option>
+          <option value="other">Other</option>
+        </select>
+        <input
+          class="inputs-style"
+          type="text"
+          name="fullName"
+          placeholder="Full Name&#x2a;"
+          required
+          tabindex="2"
+        />
+        <input
+          class="inputs-style"
+          type="email"
+          name="lastName"
+          placeholder="Email Address&#x2a;"
+          required
+          tabindex="3"
+        />
+        <input
+          class="inputs-style"
+          type="text"
+          name="mobileNumber"
+          tabindex="4"
+          placeholder="Mobile Number (optional)"
+        />
+        <textarea
+          class="textareaInput"
+          placeholder="Type Text"
+          name="textAreaInput"
+          id="text"
+          cols="30"
+          rows="10"
+          tabindex="5"
+        ></textarea>
+        <button
+          type="submit"
+          aria-label="feedback"
+          class="submit-feedback"
+          tabindex="6"
+        >
+          Submit Feedback
+        </button>
+      </form>
+
+      <!-- CONTACT US REPORT SECTION -->
+      <div class="contact-us-report" aria-label="contactUs">
+        <div class="report-item1">
+          <p class="report-heading">Report a Safety Emergency</p>
+          <p class="report-para">
+            We are committed to the safety of everyone using Curious Appetite.
+          </p>
+          <a class="report-link" href="#">Report here</a>
+        </div>
+        <div class="report-item1">
+          <p class="report-heading">Issue with your live order?</p>
+          <p class="report-para">
+            Click on the 'Support' or 'Online ordering help' section in your app
+            to connect to our customer support team.
+          </p>
+          <a class="report-link" href="#">Go to App</a>
+        </div>
+        <div class="report-item1">
+          <p class="report-heading">Issue with Curious Appetite Pro?</p>
+          <p class="report-para">
+            Click on the 'Pro help' section in your app to connect to our Pro
+            support team.
+          </p>
+          <a class="report-link" href="#">Go to App</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+
+    <div class="footer-section">
+      <div class="item-width">
+        <div class="footer-item-heading">
+          <p>ABOUT</p>
+          <hr class="hr-style-footer-item" />
+        </div>
+        <div class="footer-item-detail">
+          Curous Appetite is known around the world for their Amazing
+          hospitality and their love for Food. The most famous dishes from
+          Indian cuisine that you have heard are from Punjab. Be it Butter
+          Chicken, Tandoori Chicken, Naan, Dal Makhan and Shahi Paneer.
+        </div>
+      </div>
+      <div class="item-width">
+        <div class="footer-item-heading">
+          <p>COMPANY</p>
+          <hr class="hr-style-footer-item" />
+        </div>
+        <div class="footer-item-detail">
+          <p>Home</p>
+          <p>About</p>
+          <p>Contact Us</p>
+          <p>Locations</p>
+          <p>Book A Table</p>
+        </div>
+      </div>
+      <div class="item-width">
+        <div class="footer-item-heading">
+          <p>CONTACT</p>
+          <hr class="hr-style-footer-item" />
+        </div>
+        <div class="footer-item-detail">
+          <p>Partner with us</p>
+          <p>Help & Support</p>
+          <p>Woodbridge: +1 (905) 256-3024</p>
+          <p>London : +1 (519) 601-2224</p>
+          <p>Mississauga : +1 (905) 795-2929</p>
+          <p>Windsor : +1 (226) 837-0222</p>
+        </div>
+      </div>
+      <div class="item-width">
+        <div class="footer-item-heading">
+          <p>LEARN MORE</p>
+          <hr class="hr-style-footer-item" />
+        </div>
+        <div class="footer-item-detail">
+          <p>Privacy</p>
+          <p>Security</p>
+          <p>Terms</p>
+          <p>Work With Us</p>
+          <p>Report Fraud</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPYRIGHT SECTION -->
+
+    <div class="copyright-text">
+      Copyright © 2022 Curious Appetite| Powered By MK-AP
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
